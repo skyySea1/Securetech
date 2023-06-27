@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Tech - Cibersegurança Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Arquivo CSS para estilização -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"> -->
+  </head>
+  <body>
+    <!-- Alerta de cookies -->
+    <div class="cookie-alert">
+      <p>Nós da Securetech utilizamos cookies para melhorar a experiência do
+        usuário. Ao continuar navegando, você concorda com nossa <a href="#">Política
+          de Privacidade</a>.</p>
+      <button id="btn-aceitar-cookies">Aceitar</button>
+      <button id="btn-recusar-cookies">Recusar</button>
+    </div>
+
+    <header>
+      <nav>
+        <ul class="navbar">
+          <a class="icon" href="index.html" class="navbar-brand">
+            <img src="src/icon securetech.png" width="50px" height="50px">
+          </a>
+          <li class="nav-item"><a class="nav-item" href="#inicio"><strong>Início</strong>
+            </a></li>
+          <li class="nav-item"><a class="nav-item" href="#sobre"><strong>Sobre</strong></a></li>
+          <li class="nav-item"><a class="nav-item" href="#servicos"><strong>Serviços</strong></a></li>
+          <li class="nav-item"><a class="nav-item" href="#contato"><strong>Contato</strong></a></li>
+        </ul>
+      </nav>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var btnAceitarCookies = document.getElementById('btn-aceitar-cookies');
+          var btnRecusarCookies = document.getElementById('btn-recusar-cookies');
+          var cookieAlert = document.querySelector('.cookie-alert');
+          
+          btnAceitarCookies.addEventListener('click', function() {
+            // Lógica para armazenar a preferência do usuário (por exemplo, usando cookies ou localStorage)
+            // ...
+            
+            cookieAlert.style.display = 'none';
+          });
+          
+          btnRecusarCookies.addEventListener('click', function() {
+            // Lógica para armazenar a preferência do usuário (por exemplo, usando cookies ou localStorage)
+            // ...
+            
+            cookieAlert.style.display = 'none';
+          });
+        });
+      </script>
+    </header>
+
+    <main>
+
+      <section id="inicio">
+        <div class="container">
+
+          <nav class="nav-bar">
+
+            <h1>Secure Tech</h1>
+            <p>Soluções de cibersegurança confiáveis e eficientes.</p>
+          </div>
+        </section>
+
+        <section id="sobre">
+          <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Secure Tech é uma empresa especializada em cibersegurança
+              digital, fornecendo soluções de proteção contra ameaças virtuais.
+              Nossa empresa será especializada em Segurança de Sistemas,
+              oferecendo serviços de alta qualidade para empresas terceiras que
+              precisam reforçar a segurança de suas informações. Além dos
+              serviços de defesa dos sistemas, ataque seguro (White Hat) e
+              monitoramento de dados, nossa empresa também oferecerá consultoria
+              especializada em segurança cibernética para ajudar empresas a
+              identificar vulnerabilidades em seus sistemas e desenvolver
+              estratégias eficazes de segurança cibernética. Além disso, nossa
+              equipe de especialistas altamente qualificados estará sempre
+              atualizada com as últimas tendências em segurança cibernética,
+              garantindo que nossos clientes estejam sempre um passo à frente em
+              termos de segurança. Com um atendimento personalizado e soluções
+              sob medida para as necessidades de cada cliente, nossa empresa se
+              esforçará para garantir que a segurança de seus sistemas esteja
+              sempre em boas mãos.</p>
+          </div>
+        </section>
+
+        <section id="servicos">
+          <div class="container">
+            <h2>Nossos Serviços</h2>
+            <ul>
+              <ol>Consultoria em segurança cibernética</ol>
+              <ol>Auditoria de segurança em redes e sistemas</ol>
+              <ol>Gerenciamento de incidentes e resposta a incidentes</ol>
+              <ol>Testes de penetração e vulnerabilidade</ol>
+            </ul>
+          </div>
+        </section>
+
+        <section id="contato">
+          <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Para obter mais informações sobre nossos serviços, entre em
+              contato conosco:</p>
+            <ul>
+              <ol>Telefone: (XX) XXXX-XXXX</ol>
+              <ol>Email: info@securetech.com</ol>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <!--Rodapé com icones de redirecionamento para redes sociais-->
+
+        <div class="icons">
+
+          <!-- whatsapp -->
+          <a class="inline_block opacity"
+            href="https://api.whatsapp.com/send/?phone=5575999487558&text=Ol%C3%A1%2C+gostaria+de+solicitar+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0"
+            target="_blank" rel="noopener noreferrer">
+            <img id="whatsapp"
+              src="https://cdn-icons-png.flaticon.com/512/3536/3536445.png"
+              alt="Logo whatsapp" height="24" width="23">
+          </a>
+
+          <!-- youtube -->
+          <a class="inline_block opacity"
+            href="https://www.youtube.com/@securetech" target="_blank"
+            rel="noopener noreferrer">
+            <img id="footer_youtube"
+              src="https://cdn-icons-png.flaticon.com/512/1383/1383260.png"
+              alt="Logo YouTube" width="24" height="24">
+          </a>
+
+          <!-- instagram -->
+          <a class="inline_block opacity"
+            href="https://instagram.com/The_mental.gallery" target="_blank"
+            rel="noopener noreferrer">
+            <img id="footer_instagram"
+              src="https://cdn-icons-png.flaticon.com/512/4923/4923005.png"
+              alt="Logo instagram" width="24" height="24">
+          </a>
+        </div>
+        <p class="p"><strong>&copy; 2023 Secure Tech. Todos os direitos
+            reservados.</strong></p>
+      </footer>
+    </body>
+  </html>
