@@ -6,13 +6,14 @@
     <title>Secure Tech - Cibersegurança Digital</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
-    <!-- Arquivo CSS para estilização -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"> --> -->
+      rel="stylesheet">
   </head>
   <body>
     <!-- Alerta de cookies -->
@@ -23,11 +24,19 @@
       <button id="btn-aceitar-cookies">Aceitar</button>
       <button id="btn-recusar-cookies">Recusar</button>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"></script>
 
     <header>
       <nav>
         <ul class="navbar">
-          <a class="icon" href="index.html" class="navbar-brand">
+          <a href="index.html" class="navbar-brand">
             <img src="src/icon securetech.png" width="50px" height="50px">
           </a>
           <li class="nav-item"><a class="nav-item" href="#inicio"><strong>Início</strong>
@@ -63,17 +72,25 @@
 
     <main>
 
-      <section id="inicio">
+      <img
+        src="https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?w=740&t=st=1687883646~exp=1687884246~hmac=a8d0c1bd8d840488162e8f56ada2b28f38e9a3f18daa15b47ab9c1fd4c5c368c"
+        class="img-fluid" alt="...">
+      <section class="inicio" id="inicio">
         <div class="container">
 
           <nav class="nav-bar">
 
             <h1>Secure Tech</h1>
             <p>Soluções de cibersegurança confiáveis e eficientes.</p>
+
+            <div class="bordao-container">
+              <h1 class="bordao">Proteção sólida, confiança garantida</h1>
+              <p class="slogan">Sua segurança em nossas mãos!</p>
+            </div>
           </div>
         </section>
-
-        <section id="sobre">
+        <hr>
+        <section class="sobre" id="sobre">
           <div class="container">
             <h2>Sobre Nós</h2>
             <p>A Secure Tech é uma empresa especializada em cibersegurança
@@ -95,8 +112,8 @@
               sempre em boas mãos.</p>
           </div>
         </section>
-
-        <section id="servicos">
+        <hr>
+        <section class="servicos" id="servicos">
           <div class="container">
             <h2>Nossos Serviços</h2>
             <ul>
@@ -106,9 +123,10 @@
               <ol>Testes de penetração e vulnerabilidade</ol>
             </ul>
           </div>
-        </section>
 
-        <section id="contato">
+        </section>
+        <hr>
+        <section class="contato" id="contato">
           <div class="container">
             <h2>Entre em Contato</h2>
             <p>Para obter mais informações sobre nossos serviços, entre em
