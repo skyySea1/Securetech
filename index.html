@@ -14,24 +14,36 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet">
-      <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/headers/">
 
-      <link href="bootstrap-5.3.0-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-      
-        
-      <meta name="theme-color" content="#712cf9">
-       <link href="bootstrap-5.3.0-examples/headers/headers.css" rel="stylesheet">
+    <link href="bootstrap-5.3.0-examples/assets/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
+    <meta name="theme-color" content="#712cf9">
+    <link href="bootstrap-5.3.0-examples/headers/headers.css" rel="stylesheet">
 
   </head>
   <body>
     <!-- Alerta de cookies -->
+    <!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+  <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+  <button type="button" class="btn btn-primary btn-sm acceptcookies">
+      I agree
+  </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
     <div class="cookie-alert">
       <p>Nós da Securetech utilizamos cookies para melhorar a experiência do
         usuário. Ao continuar navegando, você concorda com nossa <a href="#">Política
           de Privacidade</a>.</p>
       <button type="button" class="btn btn-warning " id="btn-aceitar-cookies">Aceitar</button>
-    
-      <button type="button" class="btn btn-warning " id="btn-recusar-cookies">Recusar</button>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -42,40 +54,45 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"></script>
 
-      <!-- barra nav -->
-      <header class="p">
-        <a href="index.html" class="navbar-brand ">
-                <img src="src/icon securetech.png" width="50px" height="50px">
-              </a> <strong>Secure Tech</strong>
-              
-        <div class="container" >
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 ">
-              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-            </a>
-    
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              
-              <li><a href="#" class="nav-link px-2  text-warning"><strong>Início</strong></a></li>
-              <li><a href="#" class="nav-link px-2 text-warning"><strong> Serviços</strong></a></li>
-              <li><a href="#" class="nav-link px-2 text-warning"><strong>Pricing</strong></a></li>
-              <li><a href="#" class="nav-link px-2 text-warning"><strong>Contato</strong></a></li>
-              <li><a href="#" class="nav-link px-2 text-warning"><strong>Sobre</strong></a></li>
-            </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-            </form>
-    
-            <div class="text-end">
-              <button type="button" class="btn btn-outline-light me-2">Login</button>
-              <button type="button" class="btn btn-warning">Sign-up</button>
-            </div>
+    <!-- barra nav -->
+    <header class="p">
+      <a href="index.html" class="navbar-brand ">
+        <img src="src/icon securetech.png" width="50px" height="50px">
+      </a> <strong>Secure Tech</strong>
+
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 ">
+            <svg class="bi me-2" width="40" height="32" role="img"
+              aria-label="Bootstrap"><use xlink:href="#bootstrap" /></svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+            <li><a href="#" class="nav-link px-2  text-warning"><strong>Início</strong></a></li>
+            <li><a href="#" class="nav-link px-2 text-warning"><strong> Serviços</strong></a></li>
+            <li><a href="#" class="nav-link px-2 text-warning"><strong>Pricing</strong></a></li>
+            <li><a href="#" class="nav-link px-2 text-warning"><strong>Contato</strong></a></li>
+            <li><a href="#" class="nav-link px-2 text-warning"><strong>Sobre</strong></a></li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Search..." aria-label="Search">
+          </form>
+
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
           var btnAceitarCookies = document.getElementById('btn-aceitar-cookies');
           var btnRecusarCookies = document.getElementById('btn-recusar-cookies');
@@ -96,151 +113,197 @@
           });
         });
       </script>
-    </header>
+  </header>
 
-    <main>
+  <main>
 
-      <img
-        src="https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?w=740&t=st=1687883646~exp=1687884246~hmac=a8d0c1bd8d840488162e8f56ada2b28f38e9a3f18daa15b47ab9c1fd4c5c368c"
-        class="img-fluid" alt="...">
-      <section class="inicio" id="inicio">
+    <img
+      src="https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?w=740&t=st=1687883646~exp=1687884246~hmac=a8d0c1bd8d840488162e8f56ada2b28f38e9a3f18daa15b47ab9c1fd4c5c368c"
+      class="img-fluid" alt="...">
+    <section class="inicio" id="inicio">
+      <div class="container">
+
+        <nav class="nav-bar">
+
+          <h1>Secure Tech</h1>
+          <p>Soluções de cibersegurança confiáveis e eficientes.</p>
+
+          <div class="bordao-container">
+            <h1 class="bordao">Proteção sólida, confiança garantida</h1>
+            <p class="slogan">Sua segurança em nossas mãos!</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="sobre" id="sobre">
         <div class="container">
+          <h2>Sobre Nós</h2>
+          <p>A Secure Tech é uma empresa especializada em cibersegurança
+            digital, fornecendo soluções de proteção contra ameaças virtuais.
+            Nossa empresa será especializada em Segurança de Sistemas,
+            oferecendo serviços de alta qualidade para empresas terceiras que
+            precisam reforçar a segurança de suas informações. Além dos
+            serviços de defesa dos sistemas, ataque seguro (White Hat) e
+            monitoramento de dados, nossa empresa também oferecerá consultoria
+            especializada em segurança cibernética para ajudar empresas a
+            identificar vulnerabilidades em seus sistemas e desenvolver
+            estratégias eficazes de segurança cibernética. Além disso, nossa
+            equipe de especialistas altamente qualificados estará sempre
+            atualizada com as últimas tendências em segurança cibernética,
+            garantindo que nossos clientes estejam sempre um passo à frente em
+            termos de segurança. Com um atendimento personalizado e soluções
+            sob medida para as necessidades de cada cliente, nossa empresa se
+            esforçará para garantir que a segurança de seus sistemas esteja
+            sempre em boas mãos.</p>
+        </div>
+      </section>
 
-          <nav class="nav-bar">
-
-            <h1>Secure Tech</h1>
-            <p>Soluções de cibersegurança confiáveis e eficientes.</p>
-
-            <div class="bordao-container">
-              <h1 class="bordao">Proteção sólida, confiança garantida</h1>
-              <p class="slogan">Sua segurança em nossas mãos!</p>
+      <div class="container-fluid">
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg ">
+                <div class="card-body bg-light">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Nível 1</h5>
+                    <small>Segurança Padrão</small>
+                    <br><br>
+                    <span class="h2">R$8</span>/mês
+                    <br><br>
+                  </div>
+                  <p class="card-text">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Cras justo odio</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Dapibus ac facilisis in</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Vestibulum at eros</li>
+                </ul>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg text-bg-warning"
+                    style="border-radius:30px">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-lg black">
+                <div class="card-body bg-light">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Nível 2</h5>
+                    <small>Segurança elevada</small>
+                    <br><br>
+                    <span class="h2">R$20</span>/mês
+                    <br><br>
+                  </div>
+                  <p class="card-text">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Cras justo odio</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Dapibus ac facilisis in</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Vestibulum at eros</li>
+                </ul>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg text-bg-warning"
+                    style="border-radius:30px">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body bg-light">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Premium</h5>
+                    <small>Segurança Intensiva</small>
+                    <br><br>
+                    <span class="h2">R$40</span>/mês
+                    <br><br>
+                  </div>
+                  <p class="card-text">Some quick example text to build on the
+                    card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Cras justo odio</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Dapibus ac facilisis in</li>
+                  <li class="list-group-item"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-check"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg> Vestibulum at eros</li>
+                </ul>
+                <div class="card-body text-center">
+                  <button class="btn btn-outline-primary btn-lg text-bg-warning"
+                    style="border-radius:30px">Saiba Mais</button>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        <hr>
-        <section class="sobre" id="sobre">
-          <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>A Secure Tech é uma empresa especializada em cibersegurança
-              digital, fornecendo soluções de proteção contra ameaças virtuais.
-              Nossa empresa será especializada em Segurança de Sistemas,
-              oferecendo serviços de alta qualidade para empresas terceiras que
-              precisam reforçar a segurança de suas informações. Além dos
-              serviços de defesa dos sistemas, ataque seguro (White Hat) e
-              monitoramento de dados, nossa empresa também oferecerá consultoria
-              especializada em segurança cibernética para ajudar empresas a
-              identificar vulnerabilidades em seus sistemas e desenvolver
-              estratégias eficazes de segurança cibernética. Além disso, nossa
-              equipe de especialistas altamente qualificados estará sempre
-              atualizada com as últimas tendências em segurança cibernética,
-              garantindo que nossos clientes estejam sempre um passo à frente em
-              termos de segurança. Com um atendimento personalizado e soluções
-              sob medida para as necessidades de cada cliente, nossa empresa se
-              esforçará para garantir que a segurança de seus sistemas esteja
-              sempre em boas mãos.</p>
-          </div>
-        </section>
+        </div>
 
-        <div class="container-fluid" >
-          <div class="container p-5">
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card h-100 shadow-lg ">
-                  <div class="card-body bg-light">
-                    <div class="text-center p-3">
-                      <h5 class="card-title">Nível 1</h5>
-                      <small>Segurança Padrão</small>
-                      <br><br>
-                      <span class="h2">R$8</span>/mês
-                      <br><br>
-                    </div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Cras justo odio</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Dapibus ac facilisis in</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body text-center">
-                    <button class="btn btn-outline-primary btn-lg text-bg-warning" style="border-radius:30px">Saiba mais</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card h-100 shadow-lg black">
-                  <div class="card-body bg-light">
-                    <div class="text-center p-3">
-                      <h5 class="card-title">Nível 2</h5>
-                      <small>Segurança elevada</small>
-                      <br><br>
-                      <span class="h2">R$20</span>/mês
-                      <br><br>
-                    </div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Cras justo odio</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Dapibus ac facilisis in</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body text-center">
-                    <button class="btn btn-outline-primary btn-lg text-bg-warning" style="border-radius:30px">Saiba mais</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <div class="card-body bg-light">
-                    <div class="text-center p-3">
-                      <h5 class="card-title">Premium</h5>
-                      <small>Segurança Intensiva</small>
-                      <br><br>
-                      <span class="h2">R$40</span>/mês
-                      <br><br>
-                    </div>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Cras justo odio</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Dapibus ac facilisis in</li>
-                    <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                      <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
-                    </svg> Vestibulum at eros</li>
-                  </ul>
-                  <div class="card-body text-center">
-                    <button class="btn btn-outline-primary btn-lg text-bg-warning" style="border-radius:30px">Saiba Mais</button>
-                  </div>
-                </div>
-              </div>
-            </div>    
-          </div>
-        
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen></iframe>
-          </div>
-      
-      
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item"
+            src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen></iframe>
+        </div>
+
         <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-      
-      
-      
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+          crossorigin="anonymous"></script>
+
+        <script
+          src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+
         <hr>
         <section class="servicos" id="servicos">
           <div class="container">
@@ -268,8 +331,6 @@
         </section>
       </main>
 
-
-      
       <footer class="footer">
         <!--Rodapé com icones de redirecionamento para redes sociais-->
 
