@@ -13,6 +13,7 @@ body {
   
 
 }
+/* .container{color: ;} */
 .img-fluid{
   width: 100%;
   height: 800px;
@@ -46,6 +47,7 @@ nav ul {
   margin: 0 10px;
 }
 
+
 /* Estilos do cabeçalho */
 header {
   background-color: #252525;
@@ -71,9 +73,10 @@ section {
   text-align: center;
 }
 
+/* títulos da seções */
 section h1,
 section h2 {
-  color: #0078d7;
+  color: #efb810;
 }
 
 section p {
@@ -106,4 +109,20 @@ footer {
 
 .p {
   color: #efb810;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
 }
