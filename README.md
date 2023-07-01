@@ -1,2 +1,2 @@
 # Securetech
-Securetech é uma empresa fictícia criada para ilustra uma avalição do Curso e Ciência Da computação
+Securetech é uma empresa fictícia criada para ilustrar uma avalição do Curso e Ciência Da computação
